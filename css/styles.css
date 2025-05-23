@@ -310,6 +310,23 @@ a:hover {
     font-style: italic;
 }
 
+/* Artist Portrait Styling */
+.artist-portrait {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    object-fit: cover;
+    border: 3px solid rgba(139, 90, 60, 0.1);
+}
+
+.artist-portrait:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
 .image-icon {
     font-size: 4rem;
     margin-bottom: 1rem;
@@ -945,6 +962,10 @@ a:hover {
         order: 2;
     }
     
+    .artist-portrait {
+        max-width: 400px;
+    }
+    
     .about-content {
         grid-template-columns: 2fr 1fr;
     }
@@ -1092,5 +1113,21 @@ textarea:focus {
     .btn-secondary {
         color: black;
         border-color: black;
+    }
+}
+
+/* ========================================
+   MOBILE RESPONSIVE - ARTIST PORTRAIT
+   ======================================== */
+
+@media (max-width: 767px) {
+    .artist-portrait {
+        max-width: 280px;
+    }
+    
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
     }
 }
