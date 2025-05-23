@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://zitrono.github.io/mania-web/sitemap.xml
+
+# Disallow common unnecessary paths
+Disallow: /js/
+Disallow: /css/
+Disallow: /*.git*
+Disallow: /README.md
+
+# Allow important resources
+Allow: /css/styles.css
+Allow: /js/script.js
+
+# Crawl delay (optional)
+Crawl-delay: 1
